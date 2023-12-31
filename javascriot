@@ -1,0 +1,17 @@
+function validateForm() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var image = document.getElementById("image").value;
+
+    var errorMessage = "";
+
+    // Validate username, password, phone, email, and image here
+
+    if (errorMessage === "") {
+        document.getElementById("registrationForm").submit();
+    } else {
+        document.getElementById("errorMessages").innerHTML = errorMessage;
+    }
+}
